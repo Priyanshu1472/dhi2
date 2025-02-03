@@ -1,0 +1,149 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 650px;
+  transition: transform 0.3s ease;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  grid-column: span 2;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Remove arrows from number input in Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows from number input in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+select:focus,
+input[type="text"]:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Ensure Clinic Name spans full width */
+.full-width {
+  grid-column: span 2;
+}
+
+/* Make Upload Images & Submit Button span full width */
+.full-width input,
+.full-width button {
+  width: 100%;
+}
+
+/* Button Styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="file"] {
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #45a049;
+}
+
+
+p{
+  color: #c3c3c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c3c3c3;
+  padding: 10px;
+  border-radius: 6px;
+}
