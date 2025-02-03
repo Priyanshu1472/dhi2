@@ -63,7 +63,7 @@ const Form = ({ clinicName }) => {
 
     try {
       // Track upload progress via axios
-      const response = await axios.post("http://localhost:3001/submit-form", form, {
+      const response = await axios.post("http://13.203.103.190:3001/submit-form", form, {
         headers: { "Content-Type": "multipart/form-data" },
         onUploadProgress: (progressEvent) => {
           const { loaded, total } = progressEvent;
