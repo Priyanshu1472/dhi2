@@ -14,7 +14,7 @@ const Login = ({ setClinicName }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://13.203.103.190:3001/login", credentials);
+      const response = await axios.post("http://13.127.244.127:3001/login", credentials);
 
       if (response.data.success) {
         setClinicName(response.data.clinicName);
